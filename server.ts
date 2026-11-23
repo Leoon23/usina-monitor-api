@@ -1,8 +1,7 @@
-// server.ts
-import app from './src/app';
+import app from './src/app'
 
-const PORTA = 3000;
+const PORTA = 3000
 
 app.listen(PORTA, () => {
-  console.log(`Servidor rodando em http://localhost:${PORTA}`);
-});
+  console.log(`Servidor rodando em http://localhost:${PORTA}`)
+})
