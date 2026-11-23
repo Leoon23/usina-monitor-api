@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Monitor Usina Solar</title>
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="container">
+    <div>
+      <h1>Monitor Usina Solar</h1>
+      <p>Usina 5 kWp - Monitoramento em tempo real</p>
+    </div>
+    <span id="badge-status" class="badge">Aguardando dados</span>
+  </div>
+</header>
+
+<main class="container">
+  <section class="card">
+    <div class="card-header">
+      <h2>Situacao Atual</h2>
+      <span id="hora-atual"></span>
+    </div>
+    <p id="mensagem-atual" class="mensagem">Carregando...</p>
+    <div id="detalhes-atual" class="detalhes"></div>
+  </section>
+
+  <section class="card">
+    <div class="card-header">
+      <h2>Historico de Alertas</h2>
+      <span id="total-alertas">Total: 0</span>
+    </div>
+    <div id="lista-alertas"></div>
+  </section>
+
+  <button id="btn-atualizar" class="btn">Atualizar dados</button>
+</main>
+
+<script src="/app.js"></script>
+</body>
+</html>

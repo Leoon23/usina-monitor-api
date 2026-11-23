@@ -1,5 +1,5 @@
-// server.js
-const app = require('./src/app');
+// server.ts
+import app from './src/app';
 
 const PORTA = 3000;
 
